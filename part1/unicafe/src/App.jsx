@@ -31,7 +31,7 @@ const Average = ({good,neutral,bad}) =>{
 
 const PositiveAverage= ({good,neutral,bad}) =>{
   const total =  good+neutral+bad;
-  const positive = good/total;
+  const positive = (good/total)*100;
   return(<p>Positive reviews:{positive}%</p>)
 }
 
